@@ -4,7 +4,9 @@
 
 The VIN Barcode Scanner Software Development Kit for iOS is packaged as a Cocoa Touch Framework **OSXScanLib.framework**. The framework can be integrated in applications built with either Objective-C or Swift, and currently supports the following platforms: *i386, x86_64, armv7, arm64*
 
-To enable barcode scanning in your application you will need to obtain a SDK key. This key is tied to your application through its Bundle ID. The Bundle ID is the string, generally in a reverse-DNS format, which identifies your application uniquely in the iTunes app store. For example: *com.company-name.application-name*
+To enable barcode scanning in your application you will need to activate an SDK key. This key is tied to your application through its Bundle ID. The Bundle ID is the string, generally in a reverse-DNS format, which identifies your application uniquely in the iTunes app store. For example: *com.company-name.application-name* 
+
+Contact us at barcode@pixotech.com to initiate a free trial or commercial license and receive an SDK key.
 
 ---
 
