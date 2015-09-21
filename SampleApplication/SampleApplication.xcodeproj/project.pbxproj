@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B52D5B8D1BB08CFC000C9306 /* OSXScanLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52D5B8C1BB08CFC000C9306 /* OSXScanLib.framework */; };
+		B52D5B8E1BB08CFC000C9306 /* OSXScanLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B52D5B8C1BB08CFC000C9306 /* OSXScanLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B58E33771B910F570023C7E8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58E33761B910F570023C7E8 /* StartViewController.swift */; };
-		B5BCECAC1B94B28B0011DBF6 /* OSXScanLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5BCECAB1B94B28B0011DBF6 /* OSXScanLib.framework */; };
-		B5BCECAD1B94B28B0011DBF6 /* OSXScanLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5BCECAB1B94B28B0011DBF6 /* OSXScanLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5CA0D2E1B8F6AEF005AC546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CA0D2D1B8F6AEF005AC546 /* AppDelegate.swift */; };
 		B5CA0D301B8F6AEF005AC546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CA0D2F1B8F6AEF005AC546 /* ViewController.swift */; };
 		B5CA0D331B8F6AEF005AC546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CA0D311B8F6AEF005AC546 /* Main.storyboard */; };
@@ -35,7 +35,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B5BCECAD1B94B28B0011DBF6 /* OSXScanLib.framework in Embed Frameworks */,
+				B52D5B8E1BB08CFC000C9306 /* OSXScanLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,8 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B52D5B8C1BB08CFC000C9306 /* OSXScanLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSXScanLib.framework; path = ../OSXScanLib/OSXScanLib.framework; sourceTree = "<group>"; };
 		B58E33761B910F570023C7E8 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		B5BCECAB1B94B28B0011DBF6 /* OSXScanLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSXScanLib.framework; path = ../OSXScanLib/OSXScanLib.framework; sourceTree = "<group>"; };
 		B5CA0D281B8F6AEF005AC546 /* SampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CA0D2C1B8F6AEF005AC546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CA0D2D1B8F6AEF005AC546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5BCECAC1B94B28B0011DBF6 /* OSXScanLib.framework in Frameworks */,
+				B52D5B8D1BB08CFC000C9306 /* OSXScanLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 		B5CA0D1F1B8F6AEF005AC546 = {
 			isa = PBXGroup;
 			children = (
-				B5BCECAB1B94B28B0011DBF6 /* OSXScanLib.framework */,
+				B52D5B8C1BB08CFC000C9306 /* OSXScanLib.framework */,
 				B5CA0D2A1B8F6AEF005AC546 /* SampleApplication */,
 				B5CA0D401B8F6AEF005AC546 /* SampleApplicationTests */,
 				B5CA0D291B8F6AEF005AC546 /* Products */,
