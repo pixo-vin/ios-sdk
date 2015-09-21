@@ -1,6 +1,0 @@
-framework module OSXScanLib {
-  umbrella header "OSXScanLib.h"
-
-  export *
-  module * { export * }
-}
