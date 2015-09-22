@@ -4,7 +4,7 @@
 
 The VIN Barcode Scanner Software Development Kit for iOS is packaged as a Cocoa Touch Framework **OSXScanLib.framework**. The framework can be integrated in applications built with either Objective-C or Swift, and currently supports the following platforms: *i386, x86_64, armv7, arm64*
 
-To enable barcode scanning in your application you will need to activate an SDK key. This key is tied to your application through its Bundle ID. The Bundle ID is the string, generally in a reverse-DNS format, which identifies your application uniquely in the iTunes app store. For example: *com.company-name.application-name* 
+To enable barcode scanning in your application you will need to activate an SDK key. This key is tied to your application through its Bundle ID. The Bundle ID is the string, generally in a reverse-DNS format, which identifies your application uniquely in the iTunes app store. For example: *com.company-name.application-name*
 
 Contact us at barcode@pixotech.com to initiate a free trial or commercial license and receive an SDK key.
 
@@ -24,7 +24,7 @@ To add VIN Barcode scanning to your iOS application, follow these 4 simple steps
 ####Include OSXScanLib.framework####
 
  1. Clone or download this repository
- 2. Copy **OSXScanLib.framework** from <i class="icon-folder">OSXScanLib </i> into your project directory.
+ 2. Copy <i class="icon-folder">OSXScanLib/</i> into your project directory.
  3. Add **OSXScanLib.framework** to your Xcode project:
   1. In the Xcode Navigator pane select your project
   2. Navigate to the **General** tab of project settings
@@ -33,6 +33,19 @@ To add VIN Barcode scanning to your iOS application, follow these 4 simple steps
   5. Navigate to the folder where you copied **OSXScanLib.framework**, select it and click ***Open***
   6. When prompted to choose options for adding the files you may continue with the defaults that are presented.
   7. **OSXScanLib.framework** should now appear in both the **Embedded Binaries** and **Linked Frameworks and Libraries** sections of the project settings. If it does not appear under **Linked Frameworks and Libraries** you will need to manually add it using the <i class="icon-plus">**Add items**</i> button.
+
+####Preparation for App Store uploads####
+For your convenience **OSXScanLib.framework** is built with architectures required to run your application on devices and the iOS Simulator. However, embedding this full binary in your application will cause errors during submission to the App Store.
+
+To resolve this issue, you must run the **strip-frameworks.sh** script in **OSXScanLib/scripts/** during the Archive process. This process can be automated by adding a Run Script build phase to your project. To do this select your App target in the project settings pane. In the Build Phases tab click the plus sign at the top left and select ***New Run Script Phase***. Leave ***Shell*** set to '/bin/sh', then enter the following in the script contents:
+
+```
+if [ "${CONFIGURATION}" == "Release" ]; then
+    ${PROJECT_DIR}/OSXScanLib/scripts/strip-frameworks.sh
+fi
+```
+
+> ***Note:*** *The above assumes that you have copied the **OSXScanLib/** folder into the root folder of your Xcode project. If this is not the case, you will need to modify the path to strip-frameworks.sh*
 
 ####Create a UIViewController and implement **setResult**####
 
@@ -168,4 +181,3 @@ func hasTorch() -> Bool
 ```
 
 > **returns**: *true* if the flash may be used as a flashlight, otherwise *false*
-
