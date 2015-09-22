@@ -145,6 +145,7 @@
 				B5CA0D251B8F6AEF005AC546 /* Frameworks */,
 				B5CA0D261B8F6AEF005AC546 /* Resources */,
 				B5BCECAE1B94B28B0011DBF6 /* Embed Frameworks */,
+				B54946061BB1E740003A14F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -231,6 +232,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B54946061BB1E740003A14F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Release\" ]; then\n    ${PROJECT_DIR}/../OSXScanLib/scripts/strip-frameworks.sh\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5CA0D241B8F6AEF005AC546 /* Sources */ = {
