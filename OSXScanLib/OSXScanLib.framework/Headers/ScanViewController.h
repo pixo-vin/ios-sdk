@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+enum scan_format {
+    FORMAT_VIN = 1,
+    FORMAT_CODE128 = 4,
+    FORMAT_CODE39 = 8
+};
+
 @interface ScanViewController : UIViewController
 
 @property (nonatomic, retain) IBOutlet UIView *videoview;
@@ -20,6 +26,7 @@
 - (BOOL)hasTorch;
 - (void)pauseScanning;
 - (void)resumeScanning;
+- (void)setFormat:(int)format;
 - (void)setSound:(NSString *)soundPath ofType:(NSString *)type;
 - (void)setSDKKey:(NSString *)key;
 
