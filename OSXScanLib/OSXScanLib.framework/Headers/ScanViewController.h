@@ -27,6 +27,8 @@ enum scan_format {
 - (void)pauseScanning;
 - (void)resumeScanning;
 - (void)setFormat:(int)format;
+- (void)setLaserRenderer:(id)renderer;
+- (void)setLaserRendererClass:(Class)renderer;
 - (void)setSound:(NSString *)soundPath ofType:(NSString *)type;
 - (void)setSDKKey:(NSString *)key;
 

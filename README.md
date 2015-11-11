@@ -134,6 +134,20 @@ func setSound(soundPath: String, ofType: String)
 > **soundPath**: The Bundle path to the sound file including the file name, but not extension.
 > **ofType**: The extension of the sound file (e.g.: "mp3")
 
+####**setLaserRenderer**####
+
+Overrides the object that renders the laser line in the user interface. Use this method to provide a custom rendering for the laser line
+
+```
+// Objective-C
+- (void)setLaserRenderer:(id)renderer;
+
+// Swift
+func setLaserRenderer(renderer: AnyObject!)
+```
+
+> **renderer**: An instance of a class that implements the [CALayerDelegate](https://developer.apple.com/library/ios/documentation/QuartzCore/Reference/CALayerDelegate_protocol/) informal protocol. The *drawLayer:inContext:* method must be implemented to provide custom rendering.
+
 ####**pauseScanning**####
 
 Stops the barcode scanning process.

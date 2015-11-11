@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ScanViewController.h"
+#import "LaserRenderer.h"
+#import "DataMatrixLaserRenderer.h"
 
 //! Project version number for OSXScanLib.
 FOUNDATION_EXPORT double OSXScanLibVersionNumber;

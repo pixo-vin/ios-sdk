@@ -4,13 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/DataMatrixLaserRenderer.h</key>
+		<data>
+		ks7fs0YCQhG/8PoB9+/CLNhvS0I=
+		</data>
+		<key>Headers/LaserRenderer.h</key>
+		<data>
+		aFLalUdAsv5vHKLUk56CBZYtyLo=
+		</data>
 		<key>Headers/OSXScanLib.h</key>
 		<data>
-		WF+UISwzj5QJhkk4Prnz6MubiM4=
+		l2L6gJsOZiPr6bd1aGxULd/R2LM=
 		</data>
 		<key>Headers/ScanViewController.h</key>
 		<data>
-		TTm+bgGGLo+jQfDzmsHRDNj0Im4=
+		xi+4gM4H1fQqGtqRbovDD1D7zbE=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -23,13 +31,21 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/DataMatrixLaserRenderer.h</key>
+		<data>
+		ks7fs0YCQhG/8PoB9+/CLNhvS0I=
+		</data>
+		<key>Headers/LaserRenderer.h</key>
+		<data>
+		aFLalUdAsv5vHKLUk56CBZYtyLo=
+		</data>
 		<key>Headers/OSXScanLib.h</key>
 		<data>
-		WF+UISwzj5QJhkk4Prnz6MubiM4=
+		l2L6gJsOZiPr6bd1aGxULd/R2LM=
 		</data>
 		<key>Headers/ScanViewController.h</key>
 		<data>
-		TTm+bgGGLo+jQfDzmsHRDNj0Im4=
+		xi+4gM4H1fQqGtqRbovDD1D7zbE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
