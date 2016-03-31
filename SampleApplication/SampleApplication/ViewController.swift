@@ -30,18 +30,3 @@ class ViewController: ScanViewController {
         vinLabel.text = result;
     }
 }
-
-extension ViewController {
-    override func shouldAutorotate() -> Bool {
-        return false
-    }
-    
-    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-        return .LandscapeRight
-    }
-    
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.LandscapeRight
-    }
-}
-
