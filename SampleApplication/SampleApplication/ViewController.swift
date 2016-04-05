@@ -12,6 +12,12 @@ class ViewController: ScanViewController {
         vinLabel.text = "";
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        super.setLaserRendererClass(DataMatrixLaserRenderer)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
