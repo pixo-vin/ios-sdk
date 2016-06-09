@@ -14,15 +14,19 @@
 		</data>
 		<key>Headers/OSXScanLib.h</key>
 		<data>
-		l2L6gJsOZiPr6bd1aGxULd/R2LM=
+		RFYnpvGZCqhnWIcU3ckIuCFeM5I=
 		</data>
 		<key>Headers/ScanViewController.h</key>
 		<data>
 		xi+4gM4H1fQqGtqRbovDD1D7zbE=
 		</data>
+		<key>Headers/VINValidator.h</key>
+		<data>
+		t6rHgS5zO+n++i8i2Mq2MW+1nPc=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		wtpzZoB8xCgZ4IOBh+29PU9CtYA=
+		q+16A6tvp7VQio0sOi1EpvEnc2A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -32,25 +36,71 @@
 	<key>files2</key>
 	<dict>
 		<key>Headers/DataMatrixLaserRenderer.h</key>
-		<data>
-		ks7fs0YCQhG/8PoB9+/CLNhvS0I=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			ks7fs0YCQhG/8PoB9+/CLNhvS0I=
+			</data>
+			<key>hash2</key>
+			<data>
+			9QwMrZnMc5sCEpIaomdmAzNf3Tiz5B9+dh8IzqR3Zyo=
+			</data>
+		</dict>
 		<key>Headers/LaserRenderer.h</key>
-		<data>
-		aFLalUdAsv5vHKLUk56CBZYtyLo=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			aFLalUdAsv5vHKLUk56CBZYtyLo=
+			</data>
+			<key>hash2</key>
+			<data>
+			eOEDwQzbrZTcJsjqDQWW9VcBcih37i8JO99Vy/v9rBw=
+			</data>
+		</dict>
 		<key>Headers/OSXScanLib.h</key>
-		<data>
-		l2L6gJsOZiPr6bd1aGxULd/R2LM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			RFYnpvGZCqhnWIcU3ckIuCFeM5I=
+			</data>
+			<key>hash2</key>
+			<data>
+			PkW3l9tji/2C6c0IJ7mUYSPQNIiVZAENsR9mU5cQFjs=
+			</data>
+		</dict>
 		<key>Headers/ScanViewController.h</key>
-		<data>
-		xi+4gM4H1fQqGtqRbovDD1D7zbE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			xi+4gM4H1fQqGtqRbovDD1D7zbE=
+			</data>
+			<key>hash2</key>
+			<data>
+			KLlgOAd6yjPle05hbWNreEoQxUerv8/MeLpC2heA8UE=
+			</data>
+		</dict>
+		<key>Headers/VINValidator.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t6rHgS5zO+n++i8i2Mq2MW+1nPc=
+			</data>
+			<key>hash2</key>
+			<data>
+			ogfsOYe659WurjCXwBgvuyfrBtr77BTeR1BrXOkkwSI=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		Lq5a0VQaq9x0Pokd6+ffScuO0OM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Lq5a0VQaq9x0Pokd6+ffScuO0OM=
+			</data>
+			<key>hash2</key>
+			<data>
+			KizxzQD+1N2wJizxY0BLKZO+UyY2MLpkNuYOersRyzU=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

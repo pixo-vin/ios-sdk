@@ -10,6 +10,7 @@
 #import "ScanViewController.h"
 #import "LaserRenderer.h"
 #import "DataMatrixLaserRenderer.h"
+#import "VINValidator.h"
 
 //! Project version number for OSXScanLib.
 FOUNDATION_EXPORT double OSXScanLibVersionNumber;
