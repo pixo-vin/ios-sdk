@@ -387,7 +387,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/ben/barcode/barcode-ios-sdk-sample/OSXScanLib",
+					../OSXScanLib,
 				);
 				INFOPLIST_FILE = SampleApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,7 +403,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/ben/barcode/barcode-ios-sdk-sample/OSXScanLib",
+					../OSXScanLib,
 				);
 				INFOPLIST_FILE = SampleApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
