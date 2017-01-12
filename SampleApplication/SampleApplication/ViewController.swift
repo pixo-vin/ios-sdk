@@ -6,13 +6,13 @@ class ViewController: ScanViewController {
 
     @IBOutlet weak var vinLabel: UILabel!
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         vinLabel.text = "";
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         super.setLaserRendererClass(DataMatrixLaserRenderer)
@@ -29,10 +29,10 @@ class ViewController: ScanViewController {
     }
 
     @IBAction func back() {
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
-    func setResult(result: String) {
+    func setResult(_ result: String) {
         vinLabel.text = result;
     }
 }
