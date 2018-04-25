@@ -33,8 +33,8 @@ class ViewController: ScanViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    func setResult(_ result: String) {
-        vinLabel.text = result;
+    func setResult(_ _vin: String) {
+        vinLabel.text = _vin;
     }
     
     override var shouldAutorotate: Bool {
