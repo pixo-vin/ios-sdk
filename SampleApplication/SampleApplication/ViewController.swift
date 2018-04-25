@@ -16,6 +16,7 @@ class ViewController: ScanViewController {
         super.viewDidAppear(animated)
         
         super.setLaserRendererClass(DataMatrixLaserRenderer)
+        super.resumeScanning()
     }
     
     override func viewDidLoad() {
