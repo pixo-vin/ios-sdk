@@ -15,7 +15,7 @@ class ViewController: ScanViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        super.setLaserRendererClass(DataMatrixLaserRenderer)
+        super.setLaserRendererClass(DataMatrixLaserRenderer.self)
         super.resumeScanning()
     }
     
@@ -33,7 +33,7 @@ class ViewController: ScanViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    func setResult(_ _vin: String) {
+    @objc func setResult(_ _vin: String) {
         vinLabel.text = _vin;
     }
     

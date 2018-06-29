@@ -55,7 +55,7 @@ import UIKit
 import OSXScanLib
 
 class ViewController : ScanViewController {
-    func setResult(_ result: String) {
+    @objc func setResult(_ result: String) {
         // do something with the result
     }
 }
@@ -100,7 +100,7 @@ setResult is called on your ViewController when a value has been successfully re
 - (void)setResult:(NSString *)result;
 
 // Swift
-func setResult(_ result: String)
+@objc func setResult(_ result: String)
 ```
 
 > **result**: A string containing the value read from a barcode
