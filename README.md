@@ -1,6 +1,6 @@
-## VIN Barcode Scanner SDK for iOS ##
+## VIN Barcode Scanner SDK for iOS
 
-###Overview###
+### Overview
 
 The VIN Barcode Scanner Software Development Kit for iOS is packaged as a Cocoa Touch Framework **OSXScanLib.framework**. The framework can be integrated in applications built with either Objective-C or Swift, and currently supports the following platforms: *i386, x86_64, armv7, arm64*
 
@@ -10,7 +10,7 @@ Contact us at barcode@pixotech.com to initiate a free trial or commercial licens
 
 ---
 
-###Getting Started###
+### Getting Started
 
 To add VIN Barcode scanning to your iOS application, follow these 4 simple steps:
 
@@ -21,7 +21,7 @@ To add VIN Barcode scanning to your iOS application, follow these 4 simple steps
 
 ---
 
-####Include OSXScanLib.framework####
+#### Include OSXScanLib.framework
 
  1. Clone or download this repository
  2. Copy <i class="icon-folder">OSXScanLib/</i> into your project directory.
@@ -34,7 +34,7 @@ To add VIN Barcode scanning to your iOS application, follow these 4 simple steps
   6. When prompted to choose options for adding the files you may continue with the defaults that are presented.
   7. **OSXScanLib.framework** should now appear in both the **Embedded Binaries** and **Linked Frameworks and Libraries** sections of the project settings. If it does not appear under **Linked Frameworks and Libraries** you will need to manually add it using the <i class="icon-plus">**Add items**</i> button.
 
-####Preparation for App Store uploads####
+#### Preparation for App Store uploads
 For your convenience **OSXScanLib.framework** is built with architectures required to run your application on devices and the iOS Simulator. However, embedding this full binary in your application will cause errors during submission to the App Store.
 
 To resolve this issue, you must run the **strip-frameworks.sh** script in **OSXScanLib/scripts/** during the Archive process. This process can be automated by adding a Run Script build phase to your project. To do this select your App target in the project settings pane. In the Build Phases tab click the plus sign at the top left and select ***New Run Script Phase***. Leave ***Shell*** set to '/bin/sh', then enter the following in the script contents:
@@ -49,19 +49,19 @@ fi
 
 ####Create a UIViewController and implement **setResult**####
 
-####**Swift**####
+#### **Swift**
 ```
 import UIKit
 import OSXScanLib
 
 class ViewController : ScanViewController {
-    func setResult(result: String) {
+    func setResult(_ result: String) {
         // do something with the result
     }
 }
 ```
 
-####**Objective-C**####
+#### **Objective-C**
 
 ```
 #import <UIKit/UIKit.h>
@@ -79,7 +79,7 @@ class ViewController : ScanViewController {
 @end
 ```
 
-####Attach your root UIView to the **videoview** outlet####
+#### Attach your root UIView to the **videoview** outlet
 
 1. Open your Storyboard or XIB file
 2. Select the ViewController that will be used for VIN scanning.
@@ -89,9 +89,9 @@ class ViewController : ScanViewController {
 
 ---
 
-###ScanViewController API###
+### ScanViewController API
 
-####**setResult** - ***required***####
+#### **setResult** - ***required***
 
 setResult is called on your ViewController when a value has been successfully read from a barcode.
 
@@ -100,12 +100,12 @@ setResult is called on your ViewController when a value has been successfully re
 - (void)setResult:(NSString *)result;
 
 // Swift
-func setResult(result: String)
+func setResult(_ result: String)
 ```
 
 > **result**: A string containing the value read from a barcode
 
-####**setSDKKey** - *deprecated*####
+#### **setSDKKey** - *deprecated*
 
 ```
 // Objective-C
@@ -119,7 +119,7 @@ func setSDKKey(key: String)
 
 > ***Note:*** *In previous versions of the SDK a call to this method was required. In the latest version this method is deprecated; passing an SDK key to this method has no effect.*
 
-####**setSound**####
+#### **setSound**
 
 Sets a sound file that will be played when a barcode has been scanned.
 
@@ -134,7 +134,7 @@ func setSound(soundPath: String, ofType: String)
 > **soundPath**: The Bundle path to the sound file including the file name, but not extension.
 > **ofType**: The extension of the sound file (e.g.: "mp3")
 
-####**setLaserRenderer**####
+#### **setLaserRenderer**
 
 Overrides the object that renders the laser line in the user interface. Use this method to provide a custom rendering for the laser line
 
@@ -148,7 +148,7 @@ func setLaserRenderer(renderer: AnyObject!)
 
 > **renderer**: An instance of a class that implements the [CALayerDelegate](https://developer.apple.com/library/ios/documentation/QuartzCore/Reference/CALayerDelegate_protocol/) informal protocol. The *drawLayer:inContext:* method must be implemented to provide custom rendering.
 
-####**pauseScanning**####
+#### **pauseScanning**
 
 Stops the barcode scanning process.
 
@@ -160,7 +160,7 @@ Stops the barcode scanning process.
 func pauseScanning()
 ```
 
-####**resumeScanning**####
+#### **resumeScanning**
 
 Resumes scanning for barcodes after scanning has been stopped by calling ***pauseScanning***.
 
@@ -172,7 +172,7 @@ Resumes scanning for barcodes after scanning has been stopped by calling ***paus
 func resumeScanning()
 ```
 
-####**toggleTorch**####
+#### **toggleTorch**
 
 Turns the torch on/off if the device camera has a flash that may be used as a flashlight. **toggleTorch** may be referenced directly by a UIButton in your Storyboard or XIB.
 
@@ -184,7 +184,7 @@ Turns the torch on/off if the device camera has a flash that may be used as a fl
 @IBAction func toggleTorch()
 ```
 
-####**hasTorch**####
+#### **hasTorch**
 
 ```
 // Objective-C
